@@ -2,6 +2,7 @@
 
 ## 概要
 **路径：Teamcode/Java/org.firstinspires.ftc.teamcode/drive/Drivetrain**
+
 本文件包含了各种与机器人底层运动相关的函数，通过robot.Drivetrain进行调用。
 ## 链式调用
 我们的代码库中一大特点就是支持链式调用，也就是不需要写冗长的代码而精简为一连串函数的连续调用。这种方式大大减少了代码量，并且封装的函数使得用户不需要知道具体的实现逻辑，便于编写。
@@ -14,7 +15,7 @@ public void runOpMode() {
     //等待开始
     waitForStart();
     robot.drivetrain.resetYaw();
-    
+
     /*主要移动逻辑*/
 }
 ```
