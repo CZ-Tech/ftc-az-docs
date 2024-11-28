@@ -14,6 +14,7 @@ public void runOpMode() {
     //等待开始
     waitForStart();
     robot.drivetrain.resetYaw();
+    
     /*主要移动逻辑*/
 }
 ```
