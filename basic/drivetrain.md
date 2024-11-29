@@ -1,7 +1,8 @@
 # drivetrain:底盘控制
 
 ## 概要
-**路径：Teamcode/Java/org.firstinspires.ftc.teamcode/drive/Drivetrain**
+### 路径
+> drive/Drivetrain
 
 本文件包含了各种与机器人底层运动相关的函数，通过robot.Drivetrain进行调用。
 ## 链式调用

@@ -1,7 +1,8 @@
-# gamepadEX:手柄参数
+# gamepadEX:手柄扩展
 
 ## 概要
-**路径：Teamcode/Java/org.firstinspires.ftc.teamcode/drive/Drivetrain**
+### 路径
+> drive/Drivetrain
 
 由于传统的上升沿检测器与下生沿检测器编写过于繁杂，我们在询问过操作员后，发现按键按下、放开、一直按着和切换比较常用，所以封装了**keyPress**、**keyDown**、**keyUp**和**keyToggle**，简化了手柄按键的检测，实现了链式调用，并且让代码更加简洁、易懂。
 ## 具体介绍

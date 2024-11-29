@@ -1,7 +1,7 @@
 # 程序结构
 
 ## 代码位置
-FtcRobotController\TeamCode\src\main\java\org\firstinspires\ftc\teamcode
+> FtcRobotController\TeamCode\src\main\java\org\firstinspires\ftc\teamcode
 ## 代码结构
 
 ```
