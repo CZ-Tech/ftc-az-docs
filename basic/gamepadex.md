@@ -56,6 +56,8 @@ public GamepadEx keyToggle(String key, Runnable fn1, Runnable fn2){
 }
 ```
 当按下key时，执行一次fn1的内容；再次按下key，执行一次fn2的内容，并如此循环。
+
+**建议在切换的函数中增加遥测的信息显示以确认当前状态**
 ### 代码示例
 ```java
 robot.gamepad1
