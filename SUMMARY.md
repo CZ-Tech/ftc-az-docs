@@ -1,7 +1,7 @@
 # Table of contents
 
 * [欢迎](README.md)
-* [安装](installation.md)
+* [安装指南](installation.md)
 
 ## Basic
 
