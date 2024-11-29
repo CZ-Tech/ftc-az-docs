@@ -4,9 +4,9 @@
 
 ### 直接下载
 
-从官网网址中，选择FtcRobotController，在Code的下拉选项中选择Download Zip.
+从我们的[Github仓库](https://github.com/CZ-Tech/FtcRobotController)中选择FtcRobotController，在Code的下拉选项中选择Download Zip.
 
-### Git Clone
+### Git
 
 使用Git工具，在命令行中使用git命令下载：
 
@@ -14,7 +14,7 @@
 git clone https://github.com/CZ-Tech/FtcRobotController.git
 ```
 
-建议将FtcRobotController文件夹放进磁盘根目录下，不要放到中文名的文件夹内以免遇到奇怪的问题。
+建议将FtcRobotController文件夹放进磁盘根目录下，不要放到路径中含非标准ASCII码的文件夹内以免遇到奇怪的问题。
 
 ## 安装并使用
 
