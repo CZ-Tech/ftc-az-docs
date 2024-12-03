@@ -1,6 +1,8 @@
-# 欢迎
+# Welcome
 
-本文档旨在指导你如何使用川中创智机器人社（Absolute Zero Team 19656）的 FTC 代码库。 Github 网址：https://github.com/CZ-Tech/FtcRobotController
+This document aims to help you using FTC Library from Absolute Zero Team #19656.
+
+Github: https://github.com/CZ-Tech/FtcRobotController
 
 {% hint style="danger" %}
 本项目还处于早期测试阶段，仅供大家参考。
