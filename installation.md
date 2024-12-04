@@ -14,7 +14,7 @@ Using the Git tool, use the git command on the command line to download the code
 git clone https://github.com/CZ-Tech/FtcRobotController.git
 ```
 
-It is recommended to put the FtcRobotController folder in the root directory of the disk, not in a folder with non-standard ASCII codes in the path to avoid strange problems.
+It is recommended to put the FtcRobotController folder in the root directory of the disk, not in a folder with non-standard ASCII codes in the path to avoid problems.
 
 
 ## Install and Use
