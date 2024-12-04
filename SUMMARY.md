@@ -1,18 +1,18 @@
 # Table of contents
 
-* [欢迎](README.md)
-* [安装指南](installation.md)
+* [Welcome](README.md)
+* [Installation](installation.md)
 
 ## Basic
 
-* [程序结构](basic/structure.md)
-* [Globals:机器人基本参数](basic/globals.md)
-* [Robot:万物之源](basic/robot.md)
-* [opmode:自动与手动阶段设计](basic/opmode/README.md)
-  * [auto:自动](basic/opmode/auto.md)
-  * [teleop:手动阶段程序](basic/opmode/teleop.md)
-* [gamepadEX:手柄扩展](basic/gamepadex.md)
-* [drivetrain:底盘控制](basic/drivetrain.md)
+* [Structrue](basic/structure.md)
+* [Globals](basic/globals.md)
+* [Robot Class](basic/robot.md)
+* [opmode](basic/opmode/README.md)
+  * [auto](basic/opmode/auto.md)
+  * [teleop](basic/opmode/teleop.md)
+* [gamepadEX](basic/gamepadex.md)
+* [drivetrain](basic/drivetrain.md)
 
 ## Advance
 
