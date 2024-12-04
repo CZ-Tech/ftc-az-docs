@@ -1,7 +1,7 @@
 # Welcome
 
 This document aims to guide you through the use of the FTC codebase of **Team#19656 Absolute Zero**
-Github website：https://github.com/CZ-Tech/FtcRobotController
+Github website：[https://github.com/CZ-Tech/FtcRobotController](https://github.com/CZ-Tech/FtcRobotController)
 
 {% hint style="danger" %}
 This project is in the early testing phase and is for reference only.
@@ -17,7 +17,7 @@ Please make sure you have a basic knowledge of the FTC SDK before reading the co
 {% endhint %}
 
 ## How to read this document
-Please refer to [安装指南](installation-en.md).Downloaded the code and synchronized Gradle, and make sure that you have read the code initially.
+Please refer to [installation](installation.md).Downloaded the code and synchronized Gradle, and make sure that you have read the code initially.
 
 Then, you can read the rest of the document that explains each part of the code and make your own changes based on the source code.
 
