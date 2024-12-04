@@ -1,16 +1,19 @@
-# Robot:万物之源
+# Robot:the origin of all
 
-## 概要
-Robot.java包含了所有机器人模块，作为代码的统一入口使用。这样就可以将重复的代码重写成函数调用，并更具可读性。
-### 路径
+## Abstract
+
+**Robot.java** contains all robot modules and is used as a unified entry point for the code. This makes it possible to rewrite repetitive code into function calls and be more readable.
+### trails
+
 > common\Robot.java
-## 说明
-### 初始化
-在手动或自动代码中，都需要先定义Robot对象：
+## presentation
+### initialization
+In either manual or automatic code, the **Robot** object needs to be defined first:
 ```java
-Robot robot = Robot.INSTANCE;
+Robot robot = new Robot();
 ```
-然后，在runOpMode()中使用robot.init(this)初始化Robot对象：
+Then,use ```robot.init(this)```in```runOpMode()``` to initialize the Robot object:
+
 ```java
 @Override
 public void runOpMode() {
@@ -18,18 +21,19 @@ public void runOpMode() {
     /*Main Methods*/
 }
 ```
-### 使用
-作为统一入口，所有对机器人的控制都可以通过robot.\<module>.\<method>进行调用，并且部分代码支持链式调用，示例如下：
+### Usage
+As a unified entry point for the code,all controlling over the robot can be invoked from```robot.\<module>.\<method>```And part of the code supports chaining, examples are as follows:
+
 ```java
-robot.drivetrain.driveStrafe(-65.0, 0, DRIVESPEED);//移动模块
-robot.subsystem.slamDunker.grab();//子系统调用
-robot.gamepad1.update();//手柄模块
+robot.drivetrain.driveStrafe(-65.0, 0, DRIVESPEED);//mobile module
+robot.subsystem.slamDunker.grab();//subsystem invocation
+robot.gamepad1.update();//Handle Module
 /*Other Methods*/
 ```
 ### 详细解释
-Robot.java中包含了机器的所有模块入口，下面介绍一些常用的模块：
+**Robot.java**Contains all the module entries for the machine, some of the commonly used modules are described below:
 #### hardwareMap
-通过Driver Hub上编辑的硬件名称获取硬件。
+Get the hardware via the hardware name edited on Driver Hub.
 #### telemetry
 Driver Hub上的遥测，用于显示信息。
 #### drivetrain

@@ -1,32 +1,30 @@
 # Welcome
 
-This document aims to help you using FTC Library from Absolute Zero Team #19656.
-
-Github: https://github.com/CZ-Tech/FtcRobotController
+This document aims to guide you through the use of the FTC codebase of **Team#19656 Absolute Zero**
+Github website：https://github.com/CZ-Tech/FtcRobotController
 
 {% hint style="danger" %}
-本项目还处于早期测试阶段，仅供大家参考。
+This project is in the early testing phase and is for reference only.
 
-若用于实际比赛，我们不能保证代码完全可靠运行，也无法对比赛结果负任何责任。
+If using our code in an actual contest, we cannot guarantee that the code will run completely reliably, nor can we take any responsibility for the outcome of the contest.
 {% endhint %}
 
-## 为什么要写这篇文档？
-
-川中创智机器人社在参与 FTC 活动的同时，一直致力于回馈给 FTC 社区优秀的内容，因此将代码于 Github 开源网站上公开。然而，我们担心其他队伍在使用代码的时候，阅读起来可能会较为费力，或会对代码有误解。为解决这一问题，我们编写该文档，用于解释说明我们的代码。
+## Why did we write this document?
+While participating in FTC activities,**Team#19656 Absolute Zero** is always committed to giving back to the great content from FTC community.However, we are concerned that other teams using the code may have a difficult time reading it or may misunderstand it. To address this concern, we wrote this document to ilustrate our code.
 
 {% hint style="warning" %}
-阅读代码前请确保你有 FTC SDK 的基本知识。 我社所有代码均基于 FTC RobotController 开发
+Please make sure you have a basic knowledge of the FTC SDK before reading the code. All of our code is based on FTC RobotController.
 {% endhint %}
 
-## 如何阅读此文档
-请参考 [安装指南](installation.md) 下载代码并同步 Gradle，而且已经初步阅读了代码。
+## How to read this document
+Please refer to [安装指南](installation-en.md).Downloaded the code and synchronized Gradle, and make sure that you have read the code initially.
 
-接着，可以阅读剩下的解释各部分代码的文档，并在源代码基础上进行自己的修改。
+Then, you can read the rest of the document that explains each part of the code and make your own changes based on the source code.
 
-**注意：请确保你已经将自己的得分方式写进代码中。**
+**Note: Make sure you have written your own scoring method into the code.**
 
-最后，在比赛中使用你自己的程序！
+Finally, use your own code in the contest!
 
-## 建议与改进
+## Recommendations and improvements
 
-如果你有任何对于我们的文档的建议或者发现了错误，欢迎在 Github 上 提 issue ，我们会认真阅读每一条建议。
+If you have any suggestions for our document or find a bug, feel free to raise an issue on Github and we'll try our best to read every suggestion.

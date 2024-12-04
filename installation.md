@@ -1,27 +1,31 @@
-# 安装指南
+# Installation Guide
 
-## 下载代码
+## Download Code
 
-### 直接下载
+### Direct Download
 
-从我们的[Github仓库](https://github.com/CZ-Tech/FtcRobotController)中选择FtcRobotController，在Code的下拉选项中选择Download Zip.
+Select **FTCRobotController** from our [Github仓库](https://github.com/CZ-Tech/FtcRobotController)，and select **Download Zip** in the **Code** dropdown.
 
 ### Git
 
-使用Git工具，在命令行中使用git命令下载：
+Using the Git tool, use the git command on the command line to download the code:
 
 ```sh
 git clone https://github.com/CZ-Tech/FtcRobotController.git
 ```
 
-建议将FtcRobotController文件夹放进磁盘根目录下，不要放到路径中含非标准ASCII码的文件夹内以免遇到奇怪的问题。
+It is recommended to put the FtcRobotController folder in the root directory of the disk, not in a folder with non-standard ASCII codes in the path to avoid strange problems.
 
-## 安装并使用
 
-建议使用Android Studio作为编辑器。
+## Install and Use
 
-打开你的程序编辑器，导入FtcRobotController文件夹。请注意，不要导入内层的FtcRobotController.
+It is recommended to use Android Studio as an editor.
 
-_你将看到该文件夹的结构呈现在你的程序编辑器左边的列表中。_
 
-当使用Android Studio时，点击右上角的Sync Project with Gradle Files，程序将自动载入文件夹需要使用的FTC SDK库，需要一段时间，请耐心等待。
+Open your program editor and import the FtcRobotController folder. 
+
+**Notes: do not import the inner FtcRobotController.**
+
+You will see the structure of that folder presented in the list to the left of your program editor.
+
+When using Android Studio, click **Sync Project with Gradle Files** in the upper right corner, the program will automatically load the FTC SDK libraries that the folder needs to use, it will take some time, please be patient.
