@@ -26,9 +26,9 @@ public void runOpMode() {
 - heading:当前朝向
 - speed:移动速度
 
-这个函数用于让机器人前后移动，并且可以设置移动速度。一般会和driveStrafe()函数一起使用。
+这个函数用于让机器人前后移动，并且可以设置移动速度。一般会和```driveStrafe()```函数一起使用。
 ### Drivetrain driveStrafe(double distance, double heading, double speed)
-这个函数用于让机器人左右移动，并且可以设置移动速度。一般会和**driveStraight()**函数一起使用：
+这个函数用于让机器人左右移动，并且可以设置移动速度。一般会和```driveStraight()```函数一起使用：
 ```java
 robot.drivetrain
     .driveStraight(24.0, 0.0, 1.0)
@@ -70,27 +70,8 @@ robot.drivetrain
 - yaw:旋转方向
 
 这个函数是经典的麦克纳姆轮的驱动函数，以手柄的摇杆作为输入信号：
-```java
-double y = -gamepad1.left_stick_y;        
-double x = gamepad1.left_stick_x * 1.1;            
-double rx = gamepad1.right_stick_x;  
-```            
-然后，通过公式计算出各电机的功率：
-```java
-double denominator = Math.max(Math.abs(y) + Math.abs(x) + Math.abs(rx), 1);            
-double frontLeftPower = (y + x + rx) / denominator;            
-double backLeftPower = (y - x + rx) / denominator;            
-double frontRightPower = (y - x - rx) / denominator;            
-double backRightPower = (y + x - rx) / denominator;       
-```        
-最后，将功率应用到电机上：
-```java
-frontLeftMotor.setPower(frontLeftPower);            
-backLeftMotor.setPower(backLeftPower);            
-frontRightMotor.setPower(frontRightPower);            
-backRightMotor.setPower(backRightPower);   
-```
-这种方式更适用于第一人称控制。
+
+这种方式更适用于**第一人称控制**。
 ### void driveRobotFieldCentric(double axial, double lateral, double yaw)
 参数列表：
 - axial:前后移动
@@ -98,14 +79,8 @@ backRightMotor.setPower(backRightPower);
 - yaw:旋转方向
 
 如果你不习惯或者只是单纯不喜欢使用传统移动函数，我们的代码库还包含基于场地坐标系的移动函数。这种移动方式的好处在于机器人总是按照操作员的意愿移动(而不是单纯地向机器人的前方移动)，其参考系是整个场地，因此更加可控。
-通过公式转换为基于场地坐标系的参数，并调用driveRobot移动机器人：
-```java
-double botHeading = getHeading(AngleUnit.RADIANS);//getHeading用于获取当前朝向
-double rotX = lateral * Math.cos(-botHeading) - axial * Math.sin(-botHeading);
-double rotY = lateral * Math.sin(-botHeading) + axial * Math.cos(-botHeading);
-driveRobot(rotY, rotX, yaw);
-```
-这种方式更适用于第三视角控制。
+
+这种方式更适用于**第三视角控制**。
 ## 一些常用的运动函数
 除了上面的函数之外，我们还添加了许多控制底层运动逻辑的函数：
 ### void stopMotor()

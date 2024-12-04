@@ -8,9 +8,9 @@ Robot.java包含了所有机器人模块，作为代码的统一入口使用。�
 ### 初始化
 在手动或自动代码中，都需要先定义Robot对象：
 ```java
-Robot robot = Robot.INSTANCE;
+Robot robot = new Robot();
 ```
-然后，在runOpMode()中使用robot.init(this)初始化Robot对象：
+然后，在```runOpMode()```中使用```robot.init(this)```初始化Robot对象：
 ```java
 @Override
 public void runOpMode() {
@@ -19,7 +19,7 @@ public void runOpMode() {
 }
 ```
 ### 使用
-作为统一入口，所有对机器人的控制都可以通过robot.\<module>.\<method>进行调用，并且部分代码支持链式调用，示例如下：
+作为统一入口，所有对机器人的控制都可以通过```robot.\<module>.\<method>```进行调用，并且部分代码支持链式调用，示例如下：
 ```java
 robot.drivetrain.driveStrafe(-65.0, 0, DRIVESPEED);//移动模块
 robot.subsystem.slamDunker.grab();//子系统调用
