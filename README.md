@@ -11,7 +11,7 @@ If the code is used in actual competitions, we cannot guarantee that it will run
 {% endhint %}
 
 ## Why did we write this document?
-While participating in FTC activities, **Team#19656 Absolute Zero** is always committed to giving back to the great content from FTC community. However, we are concerned that other teams may have difficulties to use the FTC SDK. Thus, this document comes out.
+While participating in FTC activities, **Team#19656 Absolute Zero** is always committed to return to the great content from FTC community. However, we are concerned that other teams may have difficulties to use the FTC SDK. Thus, this document comes out.
 
 {% hint style="warning" %}
 Please make sure you have a basic knowledge of the FTC SDK before reading the code. All of our code is based on [FtcRobotController](https://github.com/FIRST-Tech-Challenge/FtcRobotController/).
@@ -26,4 +26,4 @@ Then, you can read the rest of the document that explains each part of the code 
 
 ## Recommendations and improvements
 
-If you have any suggestions for our document or find a bug, PLEASE feel free to open an issue on Github. Thank you!
+If you have any suggestions for our document or find a bug, PLEASE give us an issue on Github. Thank you!

@@ -19,13 +19,13 @@ It is recommended to put the FtcRobotController folder in the root directory of 
 
 ## Install and Use
 
-It is recommended to use Android Studio as an editor.
+It is recommended to use Android Studio as a programming tools.
 
 
-Open your program editor and import the FtcRobotController folder. 
+Open your programming tools and import the FtcRobotController folder. 
 
 **Notes: do not import the inner FtcRobotController.**
 
-You will see the structure of that folder presented in the list to the left of your program editor.
+You will see the structure of the folder presented in the list to the left of your program editor.
 
 When using Android Studio, click **Sync Project with Gradle Files** in the upper right corner, the program will automatically load the FTC SDK libraries that the folder needs to use, it will take some time, please be patient.
