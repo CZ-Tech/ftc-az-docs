@@ -15,16 +15,35 @@
 
 
 ### 手柄定义
-```Java
-robot.gamepad1//对于gamepad1进行编写
-    .update()//更新状态
-    .keyPress('a', AnyFunction())
+```java
+robot.gamepad1
+    .update()
+    .keyPress("a", () -> telemetry.addLine("Button.A - Pressed"))//按下a
+    .keyUp("a", () -> telemetry.addLine("Button.A - KeyUp"))//松开a
+    .keyDown("a", () -> telemetry.addLine("Button.A - KeyDown"))//按下a的瞬间
+    .keyToggle("cross",
+            () -> System.out.println("Button.A - KeyToggle 1"),
+            () -> System.out.println("Button.A - KeyToggle 2")
+    )//x键切换功能
 ;
 ```
-对手柄上的按键进行定义
+对手柄上的按键进行定义。详情可见 [gamepadEX:手柄扩展](basic/gamepadex.md)
 
-### 统一入口（teleop/Duo/62）
-我们通过入口处调整联盟和舵手的数量并调整程序
+### 统一入口
+
+我们编写程序统一入口，可以通过driverhub来选择自动阶段的起始位置、联盟的颜色以及操作者的数量，从而进入相应的程序。
+
+```java 
+    @TeleOp(name = "Duo/Solo Colour", group = "Duo/Solo")//进入Duo（多个操作者的适用程序）或者Solo（单个操作者的适用程序）
+    public static class Duo/SoloColour extends Duo/Solo {//输入人数+颜色
+        @Override
+        public void runOpMode() {
+            robot.teamColor = Alliance.Colour;//输入颜色
+            super.runOpMode();
+        }
+    }
+```
+
 
 ### 手柄摇杆曲线
 
