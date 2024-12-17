@@ -6,7 +6,7 @@
 ### trails
 
 > common\Robot.java
-## presentation
+## introduction
 ### initialization
 In either manual or automatic code, the **Robot** object needs to be defined first:
 ```java
@@ -22,12 +22,12 @@ public void runOpMode() {
 }
 ```
 ### Usage
-As a unified entry point for the code,all controlling over the robot can be invoked from```robot.\<module>.\<method>```And part of the code supports chaining, examples are as follows:
+As a unified entry point for the code,all controlling over the robot can be invoked from```robot.\<module>.\<method>```And part of the code supports chains, examples are as follows:
 
 ```java
-robot.drivetrain.driveStrafe(-65.0, 0, DRIVESPEED);//mobile module
+robot.drivetrain.driveStrafe(-65.0, 0, DRIVESPEED);//drivetrain module
 robot.subsystem.slamDunker.grab();//subsystem invocation
-robot.gamepad1.update();//Handle Module
+robot.gamepad1.update();//gamepadex Module
 /*Other Methods*/
 ```
 ### Detials
