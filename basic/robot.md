@@ -1,10 +1,13 @@
 # Robot:万物之源
 
 ## 概要
+
+路径：
+> common/Robot.java
+
 Robot.java包含了所有机器人模块，作为代码的统一入口使用。这样就可以将重复的代码重写成函数调用，并更具可读性。
-### 路径
-> common\Robot.java
-## 说明
+
+## 具体介绍
 ### 初始化
 在手动或自动代码中，都需要先定义Robot对象：
 ```java
@@ -26,7 +29,7 @@ robot.subsystem.slamDunker.grab();//子系统调用
 robot.gamepad1.update();//手柄模块
 /*Other Methods*/
 ```
-### 详细解释
+### 具体解释
 Robot.java中包含了机器的所有模块入口，下面介绍一些常用的模块：
 #### hardwareMap
 通过Driver Hub上编辑的硬件名称获取硬件。

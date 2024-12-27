@@ -2,7 +2,7 @@
 
 ## 概要
 
-### 路径
+路径：
 
 > opmode/teleop
 
@@ -18,13 +18,11 @@
 ```java
 robot.gamepad1
     .update()
-    .keyPress("a", () -> telemetry.addLine("Button.A - Pressed"))//按下a
-    .keyUp("a", () -> telemetry.addLine("Button.A - KeyUp"))//松开a
-    .keyDown("a", () -> telemetry.addLine("Button.A - KeyDown"))//按下a的瞬间
-    .keyToggle("cross",
-            () -> System.out.println("Button.A - KeyToggle 1"),
-            () -> System.out.println("Button.A - KeyToggle 2")
-    )//x键切换功能
+    .keyPress("a",Runnable)//按下a
+    .keyUp("b",Runnable)//松开b键
+    .keyDown("x",Runnable)//按住x键
+    .keyToggle("y",Runnable1, Runnable2)//按下y键切换
+    
 ;
 ```
 对手柄上的按键进行定义。详情可见 [gamepadEX:手柄扩展](basic/gamepadex.md)
@@ -44,9 +42,38 @@ robot.gamepad1
     }
 ```
 
+### 场地中心坐标系
+
+我们通过```robot.drivetrain.driveRobotFieldCentric()```函数让机器以场地中心坐标来确定自己的方向，但是在实际操作的过程中，操作手可能由于各种原因不了解机器的方向，因此需要使用重新定义一个按键，来重置场地坐标。
+
+```java
+robot.drivetrain.driveRobotFieldCentric(
+        gamepad1.left_stick_y,
+        gamepad1.left_stick_x,
+        gamepad1.right_stick_x
+);
+```
+如果不习惯场地中心坐标，可以使用```robot.drivetrain.driveRobot()```函数，让机器以自身为坐标。
+
+```java
+robot.drivetrain.driveRobot(
+        gamepad1.left_stick_y,
+        gamepad1.left_stick_x,
+        gamepad1.right_stick_x
+);
+```
+
+**选取哪种方法取决于操作手的习惯。**
 
 ### 手柄摇杆曲线
 
 如果操作手觉得手柄的手感比较滑或者涩，那么可以直接删除/更改该函数。
-
+```java
+robot.drivetrain.driveRobotFieldCentric(
+        gamepad1.left_stick_y,
+        gamepad1.left_stick_x,
+        gamepad1.right_stick_x,
+        fn
+);
+```
 这对程序没有任何影响。
