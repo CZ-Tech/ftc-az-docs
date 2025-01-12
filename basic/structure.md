@@ -1,6 +1,5 @@
-# 程序结构
-
-## 路径
+# The Structure of TeamCode
+## Route
 
 > FtcRobotController\TeamCode\src\main\java\org\firstinspires\ftc\teamcode
 
@@ -33,42 +32,42 @@ teamcode
             Solo.java
 ```
 
-## 说明
+## Introducion
 
 ### Globals.java
 
-该文件包含了程序中常用的一些常量，使用前必须根据自己的机器进行调整
+This file contains some constants used in the programme, which must be adjusted according to your machine before being used.
 
 ### Robot.java
 
-该文件是所有模块的统一入口，整合了各部分的内容。
+This document is the unified entrance for all modules and integrates the content of each section.
 
 ### Drivetrain.java
 
-该文件包含机器人底盘的移动代码，适用于机器整体的移动。
+This file contains the code for the movement of the robot and applies to the movement of the machine as a whole.
 
 ### GamepadEx.java
 
-该文件包含了对于FTC SDK中手柄检测的拓展，简化对手柄的编程。
+This file contains extensions to the FTC SDK for joystick detection, simplifying the programming of joysticks.
 
 ### Subsystem.java
 
-该文件是对所有子系统模块的统一入口，整合了各个子系统的内容。
+This document is a unified entrance for all subsystem modules and integrates the content of each subsystem.
 
 ### Command.java
 
-该文件包含了多个子系统共同实现的功能，通常会把一系列各个子系统的具体动作放在这里进行整理。比如在抬起机械臂后，松开爪子，然后收起机械臂等一连串动作。
+This file contains functions that are implemented by multiple subsystems together, and a series of specific actions for each subsystem are intergrated here. For example, a sequence of actions such as releasing the claw, raising the arm and then retracting the arm.
 
 ### Auto.java
 
-该文件是自动阶段的代码。
+This file is the code for the auto phase.
 
 ### Duo.java
 
-该文件是双人模式下手动阶段的代码。
+This file is the code for two-player teleop.
 
 ### Solo.java
 
-该文件是单人模式下手动阶段的代码。
+This file is the code for single-player teleop.
 
 <img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
