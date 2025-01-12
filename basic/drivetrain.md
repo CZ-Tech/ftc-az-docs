@@ -4,7 +4,7 @@
 
 路径：
 
-> drive/Drivetrain
+> Teamcode/java/org.firsinspires.ftc.teamcode/common/drive/Drivetrain
 
 本文件包含了各种与机器人底层运动相关的函数，通过robot.Drivetrain进行调用。
 
@@ -75,7 +75,7 @@ robot.drivetrain
 
 这个函数是经典的麦克纳姆轮的驱动函数，以手柄的摇杆作为输入信号：
 
-这种方式更适用于**第一人称控制**。
+是以**机器人自身为坐标原点**，进行旋转与平移。
 ### void driveRobotFieldCentric(double axial, double lateral, double yaw)
 参数列表：
 - axial:前后移动
@@ -84,7 +84,7 @@ robot.drivetrain
 
 如果你不习惯或者只是单纯不喜欢使用传统移动函数，我们的代码库还包含基于场地坐标系的移动函数。这种移动方式的好处在于机器人总是按照操作员的意愿移动(而不是单纯地向机器人的前方移动)，其参考系是整个场地，因此更加可控。
 
-这种方式更适用于**第三视角控制**。
+这个函数适用于**场地中心坐标系**。
 ## 一些常用的运动函数
 除了上面的函数之外，我们还添加了许多控制底层运动逻辑的函数：
 ### void stopMotor()
