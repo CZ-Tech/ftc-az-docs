@@ -1,6 +1,6 @@
 # 程序结构
 
-## 代码位置
+## 路径
 
 > FtcRobotController\TeamCode\src\main\java\org\firstinspires\ftc\teamcode
 
