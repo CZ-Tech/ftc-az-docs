@@ -69,11 +69,18 @@ robot.drivetrain.driveRobot(
 
 如果操作手觉得手柄的手感比较滑或者涩，那么可以直接删除/更改该函数。
 ```java
-robot.drivetrain.driveRobotFieldCentric(
-        gamepad1.left_stick_y,
-        gamepad1.left_stick_x,
-        gamepad1.right_stick_x,
-        fn
-);
+private double sss(double v) {
+    if (v > 0.0) { //若手柄存在中位漂移或抖动就改0.01
+        v = 0.87 * v * v * v + 0.09;//0.13是23-24赛季底盘启动需要的功率
+    } else if (v < 0.0) { //若手柄存在中位漂移或抖动就改-0.01
+        v = 0.87 * v * v * v - 0.09; //三次方是摇杆曲线
+    } else {
+        // XBOX和罗技手柄死区较大无需设置中位附近
+        // 若手柄存在中位漂移或抖动就改成 v*=13
+        // 这里的13是上面的0.13/0.01=13
+        v = 0;
+    }
+    return v;
+}
 ```
 这对程序没有任何影响。
