@@ -2,6 +2,9 @@
 
 ## Abstract
 
+**Route:**
+> Teamcode/java/org.firsinspires.ftc.teamcode/common/Robot
+
 ```Robot.java``` contains all robot modules and is used as a unified entry point for the code. This makes it possible to rewrite repetitive code into function calls and be more readable.
 ### trails
 

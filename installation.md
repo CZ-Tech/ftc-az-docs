@@ -4,7 +4,7 @@
 
 ### Direct Download
 
-Select **FTCRobotController** from our [Github](https://github.com/CZ-Tech/FtcRobotController)，and select **Download Zip** in the **Code** dropdown.
+Click **FTCRobotController** from our [Github](https://github.com/CZ-Tech/FtcRobotController)，and click **Download Zip** in the **Code** dropdown.
 
 ### Git
 
