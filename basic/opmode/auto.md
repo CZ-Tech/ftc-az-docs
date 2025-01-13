@@ -1,5 +1,6 @@
 # auto:自动阶段代码
-路径：> Teamcode/java/org.firsinspires.ftc.teamcode/opmode/auto
+路径：
+> Teamcode/java/org.firsinspires.ftc.teamcode/opmode/auto
 
 ## 概要
 我们通过```driveStraight```和```driveStrafe```两个函数来让机器分别进行前进、后退，以及向左、向右平移。```turnToHeading```函数来让他调整朝向。以及```sleep```让机器停止运动。

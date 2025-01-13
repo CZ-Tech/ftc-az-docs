@@ -3,7 +3,8 @@
 ## 概要
 
 路径：
-> common/Globals
+> Teamcode/java/org.firsinspires.ftc.teamcode/common/Globals
+
 
 这些基本参数直接影响到机器人的运动，所以填写恰当的数值是十分重要的。
 

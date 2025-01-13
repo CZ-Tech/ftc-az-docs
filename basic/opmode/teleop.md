@@ -4,7 +4,7 @@
 
 路径：
 
-> opmode/teleop
+> Teamcode/java/org.firsinspires.ftc.teamcode/opmode/teleop
 
 我们在询问过操作员后，发现按键按下、放开、一直按着和切换比较常用，所以封装了**keyPress**、**keyDown**、**keyUp**和**keyToggle**，简化了手柄按键的检测，并且实现了链式调用，让代码更加简洁、易懂。
 
