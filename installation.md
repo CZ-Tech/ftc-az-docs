@@ -8,7 +8,7 @@ Click **FTCRobotController** from our [Github](https://github.com/CZ-Tech/FtcRob
 
 ### Git
 
-Using the Git tool, use the git command on the command line to download the code:
+ Use the git command on the command line to download the code:
 
 ```sh
 git clone https://github.com/CZ-Tech/FtcRobotController.git
@@ -20,7 +20,6 @@ It is recommended to put the FtcRobotController folder in the root directory of 
 ## Install and Use
 
 It is recommended to use Android Studio as a programming tools.
-
 
 Open your programming tools and import the FtcRobotController folder. 
 
