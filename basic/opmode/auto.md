@@ -8,7 +8,7 @@
 ## 具体介绍
 
 ### 运动模块
-详见drivetrain模块
+详见[drivetrain:底盘控制](basic/drivetrain.md)
 
 #### 参数列表
 - ```distance```：机器要行走的距离。
