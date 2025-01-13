@@ -4,7 +4,7 @@
 
 Route:
 
-> opmode/teleop
+> Teamcode/java/org.firsinspires.ftc.teamcode/opmode/teleop
 
 After asking our operator, we found that key press, release, keep pressing and toggle are more commonly used, so we encapsulated **keyPress**, **keyDown**, **keyUp** and **keyToggle** to simplify the detection of gamepad buttons and implement chains to make the code more concise and understandable.
 
