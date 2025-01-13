@@ -1,9 +1,9 @@
 # The Structure of TeamCode
-## Route
 
+ **Route:**
 > FtcRobotController\TeamCode\src\main\java\org\firstinspires\ftc\teamcode
 
-## 代码结构
+## The structure of our code
 
 ```
 teamcode
