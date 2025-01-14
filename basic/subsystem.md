@@ -1,14 +1,15 @@
-# subsystem: 子系统
+# Subsystem: 子系统
 
 ## 概要
 
-路径：> Teamcode/java/org.firsinspires.ftc.teamcode/common/subsystem
+路径：
+> Teamcode/java/org.firsinspires.ftc.teamcode/common/subsystem
 
 我们开设了subsystem文件，将机器除了运动模块之外所分装的函数规整在一起，包括机械臂、爪子等等。通过开设这样的一个文件，可以使代码更具有逻辑性与可读性，也方便进行调用。
 
 ## 详细介绍
 
-首先，我们在subsystem文件中，新建一个子文件，并给他取一个生动形象的名字，再在其中导入一些需要用到的库；在其中Subsystem子文件中加入结构的名称。以机械臂arm为例：
+首先，我们在Subsystem文件中，新建一个子文件，并给他取一个生动形象的名字，再在其中导入一些需要用到的库；在其中Subsystem子文件中加入结构的名称。以机械臂arm为例：
 
 ```java
 public class Subsystem {
