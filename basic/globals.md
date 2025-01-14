@@ -53,7 +53,7 @@ ODO_COUNTS_PER_INCH = COUNTS_PER_ODO_REV / (WHEEL_DIAMETER_INCHES * Math.PI);
 
 因此如果此值过大会，转向速度过大，导致转向不精确，值过小会导致转向调整的时间过于缓慢。
 
-**推荐在多次尝试中得到适合自己的值**。
+**推荐在多次尝试中得到适合自己的值**
 
 ### HEADING_THRESHOLD
 
