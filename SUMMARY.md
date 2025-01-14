@@ -13,6 +13,7 @@
   * [teleop:手动阶段程序](basic/opmode/teleop.md)
 * [gamepadEX:手柄扩展](basic/gamepadex.md)
 * [drivetrain:底盘控制](basic/drivetrain.md)
+* [subsystem:子系统](basic/subsystem.md)
 
 ## 高级用法
 
