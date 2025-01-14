@@ -7,7 +7,7 @@
  
  This file contains various methods related to the drivetrain of the robot, which can be invoked via ```robot.Drivetrain```.
 
- ## chains
+ ## Chains
 One of the major features of our code is the support for chains, so that there is no need to write long code but we can simplify our codes by invoking a series of methods. Programmer don't need to remember the specific logic of the code eiither, which can benifit new learners and improve the efficiency of programming.
 
 Here are some methods that support chains:
@@ -75,17 +75,17 @@ In addition to methods supporting chains, our codes also provide different ways 
 ### void driveRobot(double axial, double lateral, double yaw)
 Parameter list:
 - axial: forward/backward movement
-- lateral:l eft-right movement
-- yaw: angle to turn by
+- lateral: left-right movement
+- yaw: the angle to turn the machine to
 
-This method is the classic drive method for a McNamee wheel, using the gampad as the input signal:
+This method is the classic drive method for a McNamee wheel, using the gampad stick as the input signal:
 
 **Robot itself is the coordinate origin.**
 ### void driveRobotFieldCentric(double axial, double lateral, double yaw)
 Parameter list:
 - axial: forward/backward movement
 - lateral: left-right movement
-- yaw: deriction
+- yaw:  the angle to turn the machine to
 
 If you are not used to, or just simply don't like, using traditional mobile methods, our codes also include mobile methods based on the field coordinate system. The advantage of this type of method is that the robot always moves as the operator wants it to (rather than simply to the front of the robot), which means its reference system is the entire field, making it more controllable.
 
