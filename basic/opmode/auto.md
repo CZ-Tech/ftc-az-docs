@@ -1,4 +1,5 @@
-# auto:code of auto phase
+# Auto: code for auto phase
+
 **Route:**
 > Teamcode/java/org.firsinspires.ftc.teamcode/opmode/auto
 

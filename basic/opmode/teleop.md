@@ -1,6 +1,6 @@
-# teleop: the code of manual phase
+# Teleop: the code for manual phase
 
-## abstract
+## Abstract
 
 **Route:**
 
