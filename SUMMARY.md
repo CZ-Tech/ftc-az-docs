@@ -13,6 +13,7 @@
   * [teleop](basic/opmode/teleop.md)
 * [gamepadEX](basic/gamepadex.md)
 * [drivetrain](basic/drivetrain.md)
+* [drivetrain](basic/drivetrain.md)
 
 ## Advance
 
